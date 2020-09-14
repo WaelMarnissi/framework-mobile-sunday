@@ -5,8 +5,9 @@
     <classes>
       <class name="com.sundayMobile.e2eTests.RunTest">
         <methods>
+          <include name="writeExtentReport"/>
           <include name="setUpClass"/>
-          <include name="feature"/>
+          <include name="feature" invocation-numbers="0"/>
           <include name="tearDownClass"/>
         </methods>
       </class> <!-- com.sundayMobile.e2eTests.RunTest -->

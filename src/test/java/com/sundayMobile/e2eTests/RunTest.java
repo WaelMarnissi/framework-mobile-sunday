@@ -11,15 +11,13 @@ import cucumber.api.SnippetType;
 import cucumber.api.CucumberOptions;
 import cucumber.api.testng.AbstractTestNGCucumberTests;
 
-
-// Uncomment @RunWith if you are using Junit to run Test 
- //@RunWith(Cucumber.class)
-
 @CucumberOptions(features={"src/test/features"}
-					//,glue={"stepdefinations","utility"}
+					//,glue={"stepdefinations"}
 					,plugin = {"pretty", "html:target/cucumber", "json:target/cucumber.json","com.cucumber.listener.ExtentCucumberFormatter:target/cucumber-reports/SundayReport.html"},
 					snippets = SnippetType.CAMELCASE,
-					tags ={"@Connexion"}
+					tags ={"@Creation-compte"}
+                   // tags ={"@Creation-compte,@,@"}  Run multiple feature
+                   //tags ={""} Runn all feature
 		)
 @Test
 public class RunTest extends AbstractTestNGCucumberTests {

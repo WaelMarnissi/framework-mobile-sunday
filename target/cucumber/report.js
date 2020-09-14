@@ -1,56 +1,81 @@
-$(document).ready(function() {var formatter = new CucumberHTML.DOMFormatter($('.cucumber-report'));formatter.uri("AuthentificationSunDay.feature");
+$(document).ready(function() {var formatter = new CucumberHTML.DOMFormatter($('.cucumber-report'));formatter.uri("account/CreateAccount.feature");
 formatter.feature({
   "line": 1,
-  "name": "SunDay Mobile - Authentification",
-  "description": "\nEn tant que Utilisateur \n\tje souhaite m\u0027authentifier sur l\u0027application SunDay",
-  "id": "sunday-mobile---authentification",
+  "name": "SunDay Mobile - Creation Compte",
+  "description": "\nEn tant que Utilisateur \n\tje souhaite créer un compte sur l\u0027application SunDay",
+  "id": "sunday-mobile---creation-compte",
   "keyword": "Feature"
 });
 formatter.before({
-  "duration": 9304671400,
+  "duration": 20976879100,
   "status": "passed"
 });
 formatter.scenario({
   "line": 7,
-  "name": "SunDay Mobile - Authentification",
+  "name": "SunDay Mobile - CreationCompte",
   "description": "",
-  "id": "sunday-mobile---authentification;sunday-mobile---authentification",
+  "id": "sunday-mobile---creation-compte;sunday-mobile---creationcompte",
   "type": "scenario",
   "keyword": "Scenario",
   "tags": [
     {
       "line": 6,
-      "name": "@Connexion"
+      "name": "@Creation-compte"
     }
   ]
 });
 formatter.step({
-  "line": 9,
+  "line": 8,
   "name": "Ouvrir l application SunDay",
   "keyword": "Given "
 });
 formatter.step({
-  "line": 10,
-  "name": "cliquer sur Vous avez deja un compte",
+  "line": 9,
+  "name": "cliquer sur Se connecter",
   "keyword": "When "
 });
 formatter.step({
+  "line": 10,
+  "name": "cliquer sur S\u0027inscrire",
+  "keyword": "And "
+});
+formatter.step({
   "line": 11,
-  "name": "saisir adresse mail",
+  "name": "saisir le Nom",
   "keyword": "And "
 });
 formatter.step({
   "line": 12,
-  "name": "saisir mot de passe",
+  "name": "cliquer sur fleche suivant",
   "keyword": "And "
 });
 formatter.step({
   "line": 13,
-  "name": "cliquer sur Connexion",
+  "name": "Cliquer sur Passer",
   "keyword": "And "
 });
 formatter.step({
   "line": 14,
+  "name": "saisir l\u0027eamil",
+  "keyword": "And "
+});
+formatter.step({
+  "line": 15,
+  "name": "saisir le mot de passe",
+  "keyword": "And "
+});
+formatter.step({
+  "line": 16,
+  "name": "Accepter les CGU",
+  "keyword": "And "
+});
+formatter.step({
+  "line": 17,
+  "name": "cliquer sur fleche suivant",
+  "keyword": "And "
+});
+formatter.step({
+  "line": 18,
   "name": "page Mes familles s affiche",
   "keyword": "Then "
 });
@@ -58,46 +83,81 @@ formatter.match({
   "location": "AuthentificationSunDayStepDef.ouvrirLApplicationSunDay()"
 });
 formatter.result({
-  "duration": 63156600,
+  "duration": 88299400,
   "status": "passed"
 });
 formatter.match({
-  "location": "AuthentificationSunDayStepDef.cliquerSurVousAvezDejaUnCompte()"
+  "location": "CreateAccount.cliquerSurSeConnecter()"
 });
 formatter.result({
-  "duration": 2265395900,
+  "duration": 14444304200,
   "status": "passed"
 });
 formatter.match({
-  "location": "AuthentificationSunDayStepDef.saisirAdresseMail()"
+  "location": "CreateAccount.cliquerSurSInscrire()"
 });
 formatter.result({
-  "duration": 2430484700,
+  "duration": 15180191800,
   "status": "passed"
 });
 formatter.match({
-  "location": "AuthentificationSunDayStepDef.saisirMotDePasse()"
+  "location": "CreateAccount.saisirLeNom()"
 });
 formatter.result({
-  "duration": 1558431500,
+  "duration": 45000,
   "status": "passed"
 });
 formatter.match({
-  "location": "AuthentificationSunDayStepDef.cliquerSurConnexion()"
+  "location": "CreateAccount.cliquerSurFlecheSuivant()"
 });
 formatter.result({
-  "duration": 1077212500,
+  "duration": 25800,
+  "status": "passed"
+});
+formatter.match({
+  "location": "CreateAccount.cliquerSurPasser()"
+});
+formatter.result({
+  "duration": 20300,
+  "status": "passed"
+});
+formatter.match({
+  "location": "CreateAccount.saisirLEamil()"
+});
+formatter.result({
+  "duration": 18800,
+  "status": "passed"
+});
+formatter.match({
+  "location": "CreateAccount.saisirLeMotDePasse()"
+});
+formatter.result({
+  "duration": 23200,
+  "status": "passed"
+});
+formatter.match({
+  "location": "CreateAccount.accepterLesCGU()"
+});
+formatter.result({
+  "duration": 11700,
+  "status": "passed"
+});
+formatter.match({
+  "location": "CreateAccount.cliquerSurFlecheSuivant()"
+});
+formatter.result({
+  "duration": 8600,
   "status": "passed"
 });
 formatter.match({
   "location": "AuthentificationSunDayStepDef.pageMesFamillesSAffiche()"
 });
 formatter.result({
-  "duration": 24300,
+  "duration": 79800,
   "status": "passed"
 });
 formatter.after({
-  "duration": 16900,
+  "duration": 13400,
   "status": "passed"
 });
 });

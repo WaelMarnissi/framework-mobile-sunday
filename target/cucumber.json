@@ -6,7 +6,7 @@
         "before": [
           {
             "result": {
-              "duration": 9304671400,
+              "duration": 20976879100,
               "status": "passed"
             },
             "match": {
@@ -15,13 +15,13 @@
           }
         ],
         "line": 7,
-        "name": "SunDay Mobile - Authentification",
+        "name": "SunDay Mobile - CreationCompte",
         "description": "",
-        "id": "sunday-mobile---authentification;sunday-mobile---authentification",
+        "id": "sunday-mobile---creation-compte;sunday-mobile---creationcompte",
         "after": [
           {
             "result": {
-              "duration": 16900,
+              "duration": 13400,
               "status": "passed"
             },
             "match": {
@@ -34,10 +34,10 @@
         "steps": [
           {
             "result": {
-              "duration": 63156600,
+              "duration": 88299400,
               "status": "passed"
             },
-            "line": 9,
+            "line": 8,
             "name": "Ouvrir l application SunDay",
             "match": {
               "location": "AuthentificationSunDayStepDef.ouvrirLApplicationSunDay()"
@@ -46,58 +46,118 @@
           },
           {
             "result": {
-              "duration": 2265395900,
+              "duration": 14444304200,
               "status": "passed"
             },
-            "line": 10,
-            "name": "cliquer sur Vous avez deja un compte",
+            "line": 9,
+            "name": "cliquer sur Se connecter",
             "match": {
-              "location": "AuthentificationSunDayStepDef.cliquerSurVousAvezDejaUnCompte()"
+              "location": "CreateAccount.cliquerSurSeConnecter()"
             },
             "keyword": "When "
           },
           {
             "result": {
-              "duration": 2430484700,
+              "duration": 15180191800,
+              "status": "passed"
+            },
+            "line": 10,
+            "name": "cliquer sur S\u0027inscrire",
+            "match": {
+              "location": "CreateAccount.cliquerSurSInscrire()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 45000,
               "status": "passed"
             },
             "line": 11,
-            "name": "saisir adresse mail",
+            "name": "saisir le Nom",
             "match": {
-              "location": "AuthentificationSunDayStepDef.saisirAdresseMail()"
+              "location": "CreateAccount.saisirLeNom()"
             },
             "keyword": "And "
           },
           {
             "result": {
-              "duration": 1558431500,
+              "duration": 25800,
               "status": "passed"
             },
             "line": 12,
-            "name": "saisir mot de passe",
+            "name": "cliquer sur fleche suivant",
             "match": {
-              "location": "AuthentificationSunDayStepDef.saisirMotDePasse()"
+              "location": "CreateAccount.cliquerSurFlecheSuivant()"
             },
             "keyword": "And "
           },
           {
             "result": {
-              "duration": 1077212500,
+              "duration": 20300,
               "status": "passed"
             },
             "line": 13,
-            "name": "cliquer sur Connexion",
+            "name": "Cliquer sur Passer",
             "match": {
-              "location": "AuthentificationSunDayStepDef.cliquerSurConnexion()"
+              "location": "CreateAccount.cliquerSurPasser()"
             },
             "keyword": "And "
           },
           {
             "result": {
-              "duration": 24300,
+              "duration": 18800,
               "status": "passed"
             },
             "line": 14,
+            "name": "saisir l\u0027eamil",
+            "match": {
+              "location": "CreateAccount.saisirLEamil()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 23200,
+              "status": "passed"
+            },
+            "line": 15,
+            "name": "saisir le mot de passe",
+            "match": {
+              "location": "CreateAccount.saisirLeMotDePasse()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 11700,
+              "status": "passed"
+            },
+            "line": 16,
+            "name": "Accepter les CGU",
+            "match": {
+              "location": "CreateAccount.accepterLesCGU()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 8600,
+              "status": "passed"
+            },
+            "line": 17,
+            "name": "cliquer sur fleche suivant",
+            "match": {
+              "location": "CreateAccount.cliquerSurFlecheSuivant()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 79800,
+              "status": "passed"
+            },
+            "line": 18,
             "name": "page Mes familles s affiche",
             "match": {
               "location": "AuthentificationSunDayStepDef.pageMesFamillesSAffiche()"
@@ -108,15 +168,15 @@
         "tags": [
           {
             "line": 6,
-            "name": "@Connexion"
+            "name": "@Creation-compte"
           }
         ]
       }
     ],
-    "name": "SunDay Mobile - Authentification",
-    "description": "\nEn tant que Utilisateur \n\tje souhaite m\u0027authentifier sur l\u0027application SunDay",
-    "id": "sunday-mobile---authentification",
+    "name": "SunDay Mobile - Creation Compte",
+    "description": "\nEn tant que Utilisateur \n\tje souhaite créer un compte sur l\u0027application SunDay",
+    "id": "sunday-mobile---creation-compte",
     "keyword": "Feature",
-    "uri": "AuthentificationSunDay.feature"
+    "uri": "account/CreateAccount.feature"
   }
 ]
